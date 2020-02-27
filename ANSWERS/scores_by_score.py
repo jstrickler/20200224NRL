@@ -10,9 +10,8 @@ with open("../DATA/testscores.dat") as f:
         scores[name] = score
         total_of_scores += score
 
-for student, score in sorted(scores.items(), key=lambda e: (e[1]),
-                             reverse=True):
-    grade = None
+
+def get_grade(score):
     if score > 94:
         grade = 'A'
     elif score > 88:
@@ -23,7 +22,14 @@ for student, score in sorted(scores.items(), key=lambda e: (e[1]),
         grade = 'D'
     else:
         grade = 'F'
-    print("{:<20s} {:2d} {}".format(student, score, grade))
+    return grade
+
+def by_value(e):
+    return e[1]
+
+for student, score in sorted(scores.items(), key=by_value,
+                             reverse=True):
+    print("{:<20s} {:2d} {}".format(student, score, get_grade(score)))
 
 average = total_of_scores / len(scores)
 print("\naverage score is  {:.2f}\n".format(average))

@@ -10,7 +10,11 @@ def mul(x, y):
     return x * y
 
 def div(x, y):
-    return x/y
+    return x / y
+
+ops = {
+    '+': add, '-': sub, '*': mul, '/': div
+}
 
 while True:
     expr = input("Enter a math expression: ")
@@ -22,14 +26,8 @@ while True:
     v1 = float(v1)
     v2 = float(v2)
 
-    if op == '+':
-        result = add(v1, v2)
-    elif op == '-':
-        result = sub(v1, v2)
-    elif op == '*':
-        result = mul(v1, v2)
-    elif op == '/':
-        result = div(v1, v2)
+    if op in ops:
+        result = ops[op](v1, v2)
     else:
         print("Bad operator!")
         continue

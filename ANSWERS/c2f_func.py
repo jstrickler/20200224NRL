@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 
 def c2f(celsius):
-    celsius = float(celsius)
-    fahrenheit = ((9 * celsius) / 5) + 32
-
-    return fahrenheit
+    return ((9 * celsius) / 5) + 32
 
 while True:
     raw_celsius = input('Enter Celsius temp: ')

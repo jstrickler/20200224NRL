@@ -75,3 +75,27 @@ print(rnums)
 for i in rnums:
     print(i, end=' ')
 print()
+
+satellites = ['telstar', 'comsat', 'sputnik']
+years = [1958, 1962, 1956]
+origins = ['US', 'US', "USSR"]
+
+x = zip(satellites, years, origins)
+print(x)
+
+for name, number, origin in x:
+    print(name, number, origin)
+
+x = zip(satellites, reversed(years), origins)
+print(list(x))
+
+for sat in satellites:
+    print(sat)
+print()
+
+# print(list([list(x) for x in enumerate(satellites)]))
+
+print(list(enumerate(satellites)))
+print(list(enumerate(satellites, 1)))
+
+

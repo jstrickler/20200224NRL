@@ -9,7 +9,9 @@ with open("../DATA/presidents.txt", "r") as PRES:
         fields = line.rstrip('\n\r').split(":")
         all_pres.append(fields) # add list of fields
 
+print(all_pres)
+
 # sort by lname, fname
 for fields in sorted(all_pres, key=lambda e: (e[1], e[2])):
-    print(fields[2], fields[1], fields[6])
+    print("{:25s} {:15s} {}".format(fields[2], fields[1], fields[6]))
 

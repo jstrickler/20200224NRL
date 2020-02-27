@@ -23,7 +23,7 @@ for student, score in sorted(scores_by_student.items()):
     else:
         grade = 'F'
 
-    print("{:<20s} {} {}".format(student, score, grade))
+    print("{:20s} {:2d} {}".format(student, score, grade))
 
 average = sum_of_scores/len(scores_by_student)
 print("\naverage score is  {:.2f}\n".format(average))

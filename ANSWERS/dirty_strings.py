@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-def cleanup(s):
-    return s.strip().lower()
 
 spam = [
     "Spam",
@@ -13,6 +11,9 @@ spam = [
     "Spam",
     "   Spam,    spam, spam,    spam, spam, eggs, and spam      ",
 ]
+
+def cleanup(s):
+    return s.strip().lower()
 
 for old_string in spam:
     new_string = cleanup(old_string)

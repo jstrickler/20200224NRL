@@ -24,3 +24,14 @@ print("range(10, 0, -1): ", end=' ')
 for x in range(10, 0, -1):  # <5>
     print(x, end=' ')
 print()
+
+r = range(10)
+print(r)
+print(list(r))
+print(list(r))
+print(list(r))
+
+for i in range(5):
+    print("20 minutes to lunch -- hang in there")
+
+
