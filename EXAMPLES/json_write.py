@@ -2,7 +2,7 @@
 
 import json
 
-george = [
+data = [
     {
         'num': 1,
         'lname': 'Washington',
@@ -23,8 +23,8 @@ george = [
     }
 ]  # <1>
 
-js = json.dumps(george, indent=4)  # <2>
+js = json.dumps(data, indent=4)  # <2>
 print(js)
 
 with open('george.json', 'w') as george_out:  # <3>
-    json.dump(george, george_out, indent=4)  # <4>
+    json.dump(data, george_out, indent=4)  # <4>

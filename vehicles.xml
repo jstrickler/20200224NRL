@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='ASCII'?>
+<vehicles>
+  <vehicle name="wind">
+    <number>0468</number>
+    <orbit>leo</orbit>
+    <year>2003</year>
+  </vehicle>
+  <vehicle name="ust">
+    <number>4090</number>
+    <orbit>geo</orbit>
+    <year>2006</year>
+  </vehicle>
+  <vehicle name="cn">
+    <number>9</number>
+    <orbit>leo</orbit>
+    <year>2014</year>
+  </vehicle>
+</vehicles>

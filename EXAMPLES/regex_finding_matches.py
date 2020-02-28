@@ -18,8 +18,10 @@ print()
 
 m = re.search(pattern, s)  # <3>
 print(m)
-if m:
+if m:  # if not None....
     print("Found:", m.group(0))  # <4>
+else:
+    print("SORRY NOT FOUND. NO SOUP FOR YOU!")
 print()
 
 for m in re.finditer(pattern, s):  # <5>

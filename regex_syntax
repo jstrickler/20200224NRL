@@ -1,0 +1,52 @@
+
+
+   pet    "the petunias" "I pet my kitteh" "the carpet is worn"
+
+   p.t     "keep to the right"      "the creep,the horror"
+               "a pattern language"
+
+   p[aeiou]t
+
+   [0123456789][0123456789][0123456789]-[0123456789][0123456789]-[0123456789][0123456789][0123456789][0123456789]
+
+   [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+   [a-z] [A-Za-z]  [A-Za-z0-9]  [A-Za-z0-9_]   [ \t\n\r\f\b]
+
+   \w [A-Za-z0-9_]
+   \d [0-9]
+   \s [ \t\n\r\f]
+
+   \d\d\d-\d\d-\d\d\d\d
+
+   *  +  ?   {2}  {2,}  {2,4}
+
+   Naval\s+Research\s+Lab
+
+   \d{3}-\d{2}-\d{4}
+
+   [A-Z]\d{2,3}
+
+   ^\d+    blech$
+
+   ^\d+$
+
+   ^\s*#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
